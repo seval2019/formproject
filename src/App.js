@@ -1,14 +1,14 @@
-import "./App.css";
-import { Route, Routes } from "react-router-dom";
-import GeneralForm from "./component/GeneralForm";
-import PortalForm from "./component/PortalForm";
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import GeneralForm from './components/GeneralForm';
+import PortalForm from './components/PortalForm';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" exact element={<GeneralForm />} />
-        <Route path="/portal" exact element={<PortalForm />} />
+        <Route path="/" element={<GeneralForm />} />
+        <Route path="/portal" element={<PortalForm />} />
       </Routes>
     </div>
   );

@@ -17,7 +17,8 @@ form label {
   margin-bottom: 10px;
 }
 
-input {
+input,
+select {
   width: 100%;
   padding: 8px 7px;
   font-size: 16px;
@@ -48,13 +49,27 @@ button {
   border-radius: 20px;
   border: none;
 }
-.input-error{
+
+.input-error {
   border-color: #fc8181;
 }
 
-.inputDiv p {
- color: #fc8181;
- font-size: 12px;
- text-align: left;
-  
+.error {
+  color: #fc8181;
+  font-size: 12px;
+  text-align: left;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkbox input {
+  width: auto;
+}
+
+.formLink {
+  color: white;
 }
